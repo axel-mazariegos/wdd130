@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&display=swap');
+
 :root {
     --fav-color: steelblue;
     --border-w: 1px;
@@ -8,6 +10,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", Helvetica, sans-serif;
 }
 
 nav {
