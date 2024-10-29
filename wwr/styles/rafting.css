@@ -153,15 +153,30 @@ article img{
 }
 
 footer {
-    color: var(--accent3-color);
-    margin-top: 15px;
-    text-align: center;
-    background-color: var(--primary-color);
-    padding: 20px;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between text and social links */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding around the footer */
+    background-color: var(--primary-color); /* Set footer background color */
+    color: var(--accent3-color); /* Text color */
+    text-align: center; /* Center the text */
 }
 
+footer p {
+    flex: 1; /* Allow the paragraph to take available space */
+    margin: 0; /* Remove default margin */
+}
 
-/* Class Selectors */
+.sociallinks {
+    display: flex; /* Use Flexbox for social links */
+    gap: 15px; /* Space between social icons */
+}
+
+.sociallinks img {
+    width: 24px; /* Set a consistent width for the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 
 .hero div{
@@ -179,7 +194,3 @@ footer {
     height: auto;
 }
 
-.sociallinks img {
-    width: 20px;
-    height: auto;
-}
