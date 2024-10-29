@@ -27,18 +27,7 @@ a, p {
     font-style: normal;
 }
 
-/*
-header {
-    background-color: var(--primary-color);
-    padding: 10px;
-}
 
-nav a{
-    color: var(--accent3-color);
-    display: block;
-    padding: 20px;
-}
-*/
 
 /* Header container styling using CSS Grid */
 header {
@@ -75,6 +64,41 @@ nav a:hover {
 }
 
 
+section {
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+h2 {
+    text-align: center; /* Center the h2 heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.history-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Center align items vertically */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.history-text {
+    flex: 1; /* Allow text sections to grow */
+    padding: 10px; /* Add padding around text */
+}
+
+.history-image {
+    flex: 0 0 200px; /* Fixed width for image container */
+    max-width: 100%; /* Responsive image */
+    text-align: center; /* Center the image */
+}
+
+.history-image img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
 
 
 h1 {
@@ -93,10 +117,11 @@ div img {
 
 article {
     position: absolute;
-    top: 1000px;
-    left: 100px;
+    top: 250px;
+    left: 10%;
     width: 80%;
-    background-color: #D68F43;
+    max-width: 640px; /* Set a maximum width */
+    background-color: var(--accent2-color);
     padding: 20px;
 }
 
@@ -122,8 +147,8 @@ footer {
 
 .hero h1 {
     position: absolute;
-    left: 200px;
-    top: 800px;
+    left: 20%;
+    top: 125px;
 }
 
 .small {
