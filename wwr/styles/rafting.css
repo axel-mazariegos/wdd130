@@ -83,6 +83,7 @@ h2 {
 .history-text {
     flex: 1; /* Allow text sections to grow */
     padding: 10px; /* Add padding around text */
+    font-size: 0.875rem; 
 }
 
 .history-image {
@@ -97,7 +98,29 @@ h2 {
 }
 
 
+.adventure-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Evenly space out the figures */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
 
+figure {
+    flex: 1 1 calc(20% - 20px); /* Each figure takes 20% of the width minus gap */
+    margin: 10px; /* Space around each figure */
+    text-align: center; /* Center captions */
+}
+
+figure img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+figcaption {
+    margin-top: 10px; /* Space above the caption */
+    font-family: "Noto Sans", sans-serif; /* Consistent font */
+    font-weight: 600; /* Bold caption */
+    color: var(--primary-color); /* Use your primary color */
+}
 
 
 
