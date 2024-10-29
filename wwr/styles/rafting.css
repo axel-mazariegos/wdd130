@@ -27,6 +27,7 @@ a, p {
     font-style: normal;
 }
 
+/*
 header {
     background-color: var(--primary-color);
     padding: 10px;
@@ -37,6 +38,44 @@ nav a{
     display: block;
     padding: 20px;
 }
+*/
+
+/* Header container styling using CSS Grid */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: one for the logo, one for the nav */
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+/* Logo styling */
+header img {
+    max-height: 75px;
+}
+
+/* Navigation styling using CSS Flexbox */
+nav {
+    display: flex; /* Flex container for horizontal alignment of links */
+    justify-content: flex-end; /* Align links to the right */
+}
+
+/* Navigation link styling */
+nav a {
+    color: var(--accent3-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+
+
 
 h1 {
     color: var(--accent2-color);
