@@ -10,6 +10,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
 }
 
 main {
@@ -21,11 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
-a, p {
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
+
 
 
 
@@ -194,3 +192,62 @@ footer p {
     height: auto;
 }
 
+
+
+/*---------- CONTACT US ----------*/
+
+.contact-details {
+    text-align: center;
+    margin: 20px auto; /* Optional: adds some spacing around the contact details */
+}
+
+#map {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Style for employee profiles */
+section figure {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+section figure img {
+    border-radius: 50%; /* Make images circular */
+    width: 150px;
+    height: 150px;
+}
+
+/* Style for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label, form textarea, form input, form button {
+    margin: 10px 0;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 1rem;
+    border-radius: .25rem;
+    font-size: 1.2rem;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent1-color);
+}
