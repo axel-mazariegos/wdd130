@@ -20,7 +20,6 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Bungee", system-ui;
-    font-style: normal;
 }
 
 
@@ -115,7 +114,6 @@ figure img {
 
 figcaption {
     margin-top: 10px; /* Space above the caption */
-    font-family: "Noto Sans", sans-serif; /* Consistent font */
     font-weight: 600; /* Bold caption */
     color: var(--primary-color); /* Use your primary color */
 }
