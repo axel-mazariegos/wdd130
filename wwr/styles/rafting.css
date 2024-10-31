@@ -175,14 +175,18 @@ footer p {
 
 
 
-.hero div{
+.hero {
     position: relative;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 .hero h1 {
     position: absolute;
-    left: 20%;
-    top: 125px;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
 }
 
 .small {
@@ -290,7 +294,7 @@ button[type="submit"]:hover {
 
 .trip {
     flex: 1 1 30%; /* Each trip takes up about a third of the row */
-    max-width: 350px;
+    max-width: 330px;
     text-align: center;
 }
 
@@ -326,4 +330,43 @@ button[type="submit"]:hover {
 .trip-table td {
     background-color: var(--accent3-color);
     color: var(--primary-color);
+}
+
+/*---------- HOME ----------*/
+
+/* About and Offerings Section (CSS Grid) */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-item p {
+    padding: 10px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Newsletter Signup Form */
+.newsletter-signup {
+    padding: 20px;
+}
+
+.newsletter-signup form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-signup label, .newsletter-signup input, .newsletter-signup button {
+    margin: 10px 0;
 }
