@@ -340,7 +340,9 @@ button[type="submit"]:hover {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    
 }
+
 
 .about-item img {
     width: 100%;
